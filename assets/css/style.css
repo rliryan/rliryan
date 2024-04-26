@@ -200,11 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/westpointwallpaper.png") top right;
   background-size: cover;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 50;
-  z-index: 1;
+  horizontal-align: right;
 }
 #hero:before {
   content: "";
