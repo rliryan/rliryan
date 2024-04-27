@@ -201,11 +201,11 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/wpcoloredback.png");
   background-size: cover;
 }
-#hero. image-container {
+.image-container {
   position: relative;
 }
 
-#hero .image-container img {
+.image-container img {
   position: absolute;
   top: 0;
   left: 0;
@@ -214,15 +214,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
 }
 
-#hero .image-container img:nth-child(2) {
+#hero b2 .image-container img:nth-child(2) {
   opacity: 0; /* Initially hide the second image */
 }
 
-#hero .image-container:hover img:nth-child(1) {
+#hero b1 .image-container:hover img:nth-child(1) {
   opacity: 0; /* On hover, fade out the first image */
 }
 
-#hero .image-container:hover img:nth-child(2) {
+#hero b2 .image-container:hover img:nth-child(2) {
   opacity: 1; /* On hover, fade in the second image */
 }
 #hero:before {
