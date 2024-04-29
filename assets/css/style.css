@@ -195,32 +195,49 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero .bg-fade {
+#hero .bg-fade{
   position: relative;
 }
 
-.bg-fade img {
+.bg-fade{
   position: absolute;
-  top: 0;
-  left: 0;
+  content: '';
   width: 100%;
   height: 100%;
+  inset: 0;
   background-size: cover;
-  z-index:-1;
-  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  background-position: center center;
+  opacity: 0;
+  animation-name: fade-zoom;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
 }
 
-.bg-fade img:nth-child(2) {
-  opacity: 0; /* Initially hide the second image */
+.bg-fade:nth-child(2) {
+  animation-delay: 0s;
 }
 
-.bg-fade:hover img:nth-child(1) {
-  opacity: 0; /* On hover, fade out the first image */
+.bg-fade:nth-child(1) {
+  animation-delay: 6s;
 }
 
-.bg-fade:hover img:nth-child(2) {
-  opacity: 1; /* On hover, fade in the second image */
+@keyframes fade-zoom {
+  0%{
+    opacity: 0;
+    transform: scale(100%);
+  }
+  33.33%{
+    opacity: 1;
+  }
+  66.66%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(110%);
+  }
 }
+
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
