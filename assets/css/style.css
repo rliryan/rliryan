@@ -214,15 +214,15 @@ h1, h2, h3, h4, h5, h6 {
   animation-iteration-count: infinite;
 }
 
-.hero-fade:nth-child(2) {
+.hero-fade:nth-child(3) {
   animation-delay: 0s;
 }
 
-.hero-fade:nth-child(1) {
+.hero-fade:nth-child(3) {
   animation-delay: 3s;
 }
 
-.hero-fade:nth-child(2) {
+.hero-fade:nth-child(3) {
   animation-delay: 6s
 }
 
