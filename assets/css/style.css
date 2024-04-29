@@ -195,12 +195,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero .bg-fade{
+#hero .hero-fade{
   position: relative;
   overflow: hidden;
 }
 
-.bg-fade{
+.hero-fade{
   position: absolute;
   content: '';
   width: 100%;
@@ -214,11 +214,11 @@ h1, h2, h3, h4, h5, h6 {
   animation-iteration-count: infinite;
 }
 
-.bg-fade:nth-child(2) {
+.hero-fade:nth-child(2) {
   animation-delay: 0s;
 }
 
-.bg-fade:nth-child(1) {
+.hero-fade:nth-child(1) {
   animation-delay: 6s;
 }
 
