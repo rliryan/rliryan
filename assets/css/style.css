@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   opacity: 0;
   animation-name: fade-zoom;
-  animation-duration: 12s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
 }
 
@@ -219,7 +219,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-fade:nth-child(1) {
-  animation-delay: 6s;
+  animation-delay: 3s;
+}
+
+.hero-fade:nth-child(2) {
+  animation-delay: 6s
 }
 
 @keyframes fade-zoom {
